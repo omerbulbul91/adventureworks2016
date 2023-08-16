@@ -8,6 +8,7 @@
   [SpatialLocation] [geography] NULL,
   [rowguid] [uniqueidentifier] NOT NULL CONSTRAINT [DF_Address_rowguid] DEFAULT (newid()) ROWGUIDCOL,
   [ModifiedDate] [datetime] NOT NULL CONSTRAINT [DF_Address_ModifiedDate] DEFAULT (getdate()),
+  [DenemeID] [int] NULL,
   CONSTRAINT [PK_Address_AddressID] PRIMARY KEY CLUSTERED ([AddressID])
 )
 ON [PRIMARY]
